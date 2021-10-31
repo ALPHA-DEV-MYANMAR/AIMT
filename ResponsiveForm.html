@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive-Form</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Festive&family=Fruktur&family=Qahiri&family=Roboto:wght@100&family=Zen+Kurenaido&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Fruktur', cursive;
+        }
+
+        body{
+        
+            background-color:#b3b3b3;
+        
+        }
+
+        legend{
+            font-size: 20px;
+            color: #1a75ff;
+            text-shadow: 6.2px 12.3px 12.3px hsl(0deg 0% 0% / 0.31);
+        }
+
+        .responsive-form {
+            width: 50%;
+            margin: auto;
+            position: relative;
+            top: 50px;
+        }
+
+        fieldset{
+            border-radius: 10px;
+            border: 1px solid #b3ffff;
+            background-color: #b3ffff;
+            box-shadow: 6.2px 12.3px 12.3px hsl(0deg 0% 0% / 0.31);
+
+        }
+
+        form {
+            background-color: #b3ffff;
+        }
+
+        .label {
+            display: inline;
+            float: left;
+            width: 100px;
+            margin: 10px;
+        }
+
+        label {
+            margin: 10px;
+            text-shadow: 1.4px 2.7px 2.7px hsl(0deg 0% 0% / 0.46);
+        }
+
+        .inputradio{
+            padding: 5px;
+            margin: 10px;
+            float: left;
+            width: 300px;
+            height: 20px;
+        }
+
+        .inputbox input{
+            padding: 5px;
+            margin: 10px;
+            width: 300px;
+            height: 20px;
+            border: 2px solid gray;
+            border-radius: 5px;
+            box-shadow: 1.4px 2.7px 2.7px hsl(0deg 0% 0% / 0.46);
+        }
+
+        .inputbox input:focus {
+            background-color: rgb(230, 230, 230);
+        }
+
+        .inputbox input:hover{
+            box-shadow: 6.2px 12.3px 12.3px hsl(0deg 0% 0% / 0.31);
+        }
+
+        textarea{
+            padding: 5px;
+            margin: 10px;
+            width: 300px;
+            height: 150px;
+            border: 2px solid gray;
+            border-radius: 5px;
+            resize: vertical;
+            box-shadow: 1.4px 2.7px 2.7px hsl(0deg 0% 0% / 0.46);
+        }
+
+        textarea:hover{
+            box-shadow: 6.2px 12.3px 12.3px hsl(0deg 0% 0% / 0.31);
+        }
+
+        textarea:focus{
+            background-color: rgb(230, 230, 230);
+        }
+
+        form {
+            margin: auto;
+            width: 500px;
+        }
+
+        .inputbutton {
+            float: right;
+            margin: 10px;
+        }
+
+        .btn {
+            width: 150px;
+            height: 30px;
+            border-radius: 5px;
+            border: 2px solid #4d79ff;
+            background-color: #4d79ff;
+            color: white;
+            box-shadow: 1.4px 2.7px 2.7px hsl(0deg 0% 0% / 0.46);
+        }
+
+        .btn:hover{
+            box-shadow: 6.2px 12.3px 12.3px hsl(0deg 0% 0% / 0.31);
+        }
+
+        .btn:active{
+            background-color: rgb(230, 230, 230);
+            color: rgb(102, 153, 255);
+            border: 2px solid rgb(230, 230, 230);
+            width: 160px;
+            height: 40px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div>
+        <div class="responsive-form">
+            <fieldset>
+                <div class="form">
+                    <form action="">
+    
+                        <div class="label">
+                            <label for="">Username:</label>
+                        </div>
+                        <div class="inputbox">
+                            <input type="text" placeholder="username">
+                        </div>
+    
+                        <div class="label">
+                            <label for="">Email:</label>
+                        </div>
+                        <div class="inputbox">
+                            <input type="email" placeholder="email">
+                        </div>
+    
+                        <div class="label">
+                            <label for="">Phone:</label>
+                        </div>
+                        <div class="inputbox">
+                            <input type="number" placeholder="phone">
+                        </div>
+    
+                        <div class="label">
+                            <label for="">Gender</label>
+                        </div>
+    
+                        <div class="inputradio">
+                            <input type="radio" name="radio">Male
+                            <input type="radio" name="radio">Female
+                        </div>
+    
+                        <div class="label">
+                            <label for="">Message:</label>
+                        </div>
+                        <div class="inputbox">
+                            <textarea> 
+                            </textarea>
+                        </div>
+    
+                        <div class="inputbutton">
+                            <button class="btn" type="submit">submit</button>
+                            <button class="btn" type="submit">reset</button>
+                        </div>
+    
+                    </form>
+                </div>
+                <legend>Responsive Form</legend>
+    
+            </fieldset>
+        </div>
+    </div>
+
+</body>
+
+</html>
